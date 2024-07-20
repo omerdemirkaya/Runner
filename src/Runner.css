@@ -1,0 +1,133 @@
+.container {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: aquamarine;
+    box-sizing: border-box;
+    overflow-y: hidden;
+}
+
+.header {
+    width: 100%;
+    height: 10%;
+    letter-spacing: 5rem;
+    font-size: 5vh;
+    background-color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border-bottom: 1px solid black;
+}
+
+.content {
+    width: 100%;
+    height: 90%;
+    display: flex;
+}
+
+.runner-side {
+    width: 70%;
+    height: auto;
+    background-color: #77E4C8;
+}
+
+.record-side {
+    width: 30%;
+    height: auto;
+    background-color: #36C2CE;
+    overflow-y: auto;
+}
+.record-item{
+    font-size: 2vh;
+    padding: 20px;
+    border-bottom: 1px solid black;
+    font-family: "poppins",monospace;
+}
+
+.record-side-header {
+    width: 100%;
+    height: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 5vh;
+    font-family: "poppins",monospace;
+}
+
+.record-side-content {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.image-side {
+    width: 100%;
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+    margin-top: 1px;
+}
+
+.runner-side-record {
+    width: 100%;
+    height: 50%;
+}
+
+img {
+    width: 50vh;
+    height: 30vh;
+}
+
+.stopwatch {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.timer {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+button {
+    display: inline-block;
+    outline: 0;
+    border: none;
+    cursor: pointer;
+    padding: 0 24px;
+    border-radius: 50px;
+    min-width: 200px;
+    height: 50px;
+    font-size: 18px;
+    background-color: #fd0;
+    font-weight: 500;
+    color: #222;
+    margin-bottom: 10px;
+}
+@media (max-width: 768px) {
+    .content {
+        flex-direction: column;
+    }
+    .header{
+        font-size: 2vh;
+        letter-spacing: 3rem;
+    }
+    
+    .runner-side {
+        width: 100%;
+        margin-bottom: 0;
+    }
+    
+    .record-side {
+        width: 100%;
+        margin-bottom: 0;
+        flex-grow: 1;
+    }
+}
